@@ -1,0 +1,21 @@
+﻿<ion-view title="登录">
+    <ion-content padding="true" class="has-header">
+        <form name="myForm" ng-controller="loginCtrl" class="css-form" ng-submit="login(user)">
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">Username</span>
+                    <input type="text" placeholder="" ng-model="user.userName" name="userName" required>
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="" ng-model="user.password" name="password" required>
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <button class="button button-stable button-block" type="submit">{{name}}</button>
+            <span ng-show="myForm.userName.$error.required">用户名不能为空!</span>
+            <span ng-show="myForm.password.$error.required">密码不能为空!</span>
+            <span ng-show="!isValid">{{error}}</span>        
+        </form>
+    </ion-content>
+</ion-view>

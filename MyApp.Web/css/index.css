@@ -1,0 +1,28 @@
+﻿body {
+}
+
+.spinner svg {
+    width: 28px;
+    height: 28px;
+    stroke: #444;
+    fill: #444;
+}
+
+.css-form input.ng-invalid.ng-dirty {
+    background-color: #FA787E;
+}
+
+.css-form input.ng-valid.ng-dirty {
+    background-color: #78FA89;
+}
+
+.box {
+    height:100px;
+    background-color:gray;
+}
+.span-number-odd {
+    display:block;float:left;width:30px; background-color:greenyellow;color:white;vertical-align:middle;text-align:center;font-size:large
+}
+.span-number-even {
+    display:block;float:left;width:30px; background-color:chocolate;color:white;vertical-align:middle;text-align:center;font-size:large
+}
